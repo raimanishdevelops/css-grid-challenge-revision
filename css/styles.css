@@ -46,12 +46,37 @@ exactly the saem thing done below*/
     min-height: 100vh;
 }
 
+/* assigning ui components to template area ,
+ .header being the ui component  */
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main    { grid-area: main; }
+.footer  { grid-area: footer; }
 
 
 .container .header,
-.sidebar,
-.main,
-.footer {
+.container .sidebar,
+.container .main,
+.container .footer {
 
     border: 2px solid black;
+}
+
+
+
+
+.container .header{
+    background-color: aqua;
+}
+
+.container .sidebar{
+    background-color: rgb(200, 121, 121);
+}
+
+.container .main{
+    background-color: aquamarine;
+}
+
+.container .footer{
+    background-color: rgb(235, 177, 91);
 }
